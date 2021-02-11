@@ -32,3 +32,4 @@ Route::get('/inscription', function () {
 Route::post('/inscription', function () {
     return 'Votre email est ' . request('email');
 });
+Route::resource('programs', 'ProgramController');
